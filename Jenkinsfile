@@ -40,7 +40,7 @@ pipeline {
            junit '**/target/surefire-reports/*.xml'
 
           
-           publishTestNGResults(pattern: '**/test-output/testng-results.xml')
+          
        }
        success {
            echo 'Pipeline completed successfully.'

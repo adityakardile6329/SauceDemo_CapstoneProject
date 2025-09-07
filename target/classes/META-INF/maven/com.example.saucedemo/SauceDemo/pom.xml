@@ -101,8 +101,17 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.2.5</version> <!-- Latest, supports Java 21 -->
+				<version>3.2.5</version>
+				<configuration>
+					<includes>
+						<include>**/*Test.java</include>       <!-- TestNG tests -->
+						<include>**/*Runner.java</include>     <!-- Cucumber Runner
+						classes -->
+					</includes>
+					<testFailureIgnore>false</testFailureIgnore>
+				</configuration>
 			</plugin>
+
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

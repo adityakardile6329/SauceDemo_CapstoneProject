@@ -1,41 +1,47 @@
 pipeline {
    agent any
- 
+
    environment {
-       // Optional environment variables
        APP_ENV = 'dev'
    }
- 
+
    stages {
        stage('Clone') {
            steps {
                git 'https://github.com/adityakardile6329/SauceDemo_CapstoneProject'
            }
        }
- 
+
        stage('Build') {
            steps {
                echo 'Building the project...'
-              bat 'mvn clean install' 
+               bat 'mvn clean install'
            }
        }
- 
+
        stage('Test') {
            steps {
                echo 'Running tests...'
-               bat 'mvn test' 
+               bat 'mvn test'
            }
        }
- 
-      stage('Deploy') {
+
+       stage('Deploy') {
            steps {
                echo "Deploying to ${env.APP_ENV} environment..."
-               // Your deployment logic here
+              
            }
        }
    }
- 
+
    post {
+       always {
+           
+           junit '**/target/surefire-reports/*.xml'
+
+          
+           publishTestNGResults(pattern: '**/test-output/testng-results.xml')
+       }
        success {
            echo 'Pipeline completed successfully.'
        }

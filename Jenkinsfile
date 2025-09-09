@@ -62,30 +62,4 @@ pipeline {
          }
       }
    }
-   
-   post {
-      always {
-         // Archive screenshots
-         archiveArtifacts artifacts: 'screenshots/*', fingerprint: true
-         
-         // Publish Cucumber Report
-         publishHTML(target: [
-         allowMissing: false,
-         alwaysLinkToLastBuild: true,
-         keepAll: true,
-         reportDir: 'reports/cucumber-reports',
-         reportFiles: 'cucumber-report.html',
-         reportName: 'Cucumber Report'
-         ])
-         
-         // Publish Extent Report
-         publishHTML(target: [
-         allowMissing: false,
-         alwaysLinkToLastBuild: true,
-         keepAll: true,
-         reportDir: 'reports/extent-reports',
-         reportFiles: 'index.html',
-         reportName: 'Extent Report'
-         ])
-      }
-   }
+}

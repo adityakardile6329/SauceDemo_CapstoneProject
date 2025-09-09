@@ -2,28 +2,21 @@ pipeline {
     agent any
  
     environment {
-        GIT_CREDENTIALS_ID = '36821c07-230e-4b74-b3d2-a8907a056d23' // Replace with your actual credentials ID
-        BRANCH_NAME = 'master' // Set your target branch
-        ECLIPSE_WORKSPACE = 'C:\\Users\\anike\\eclipse-workspace\\SauceDemo' // Update to your actual path
-        COMMIT_MESSAGE = 'Automated commit from Jenkins'
+        BRANCH_NAME = 'master'
+        ECLIPSE_WORKSPACE = 'C:\\Users\\anike\\eclipse-workspace\\SauceDemo'
+        COMMIT_MESSAGE = 'Jenkins: Auto-commit after build'
+    }
+ 
+    // Auto-trigger every 5 mins on Git changes
+    triggers {
+        pollSCM('H H * * *')
     }
  
     stages {
-        stage('Clean Workspace') {
-            steps {
-                cleanWs()
-            }
-        }
- 
         stage('Checkout from Git') {
             steps {
-                checkout([$class: 'GitSCM',
-                    branches: [[name: "*/${env.BRANCH_NAME}"]],
-                    userRemoteConfigs: [[
-                        url: 'https://github.com/adityakardile6329/SauceDemo_CapstoneProject', // Replace with your repo URL
-                        credentialsId: "${env.GIT_CREDENTIALS_ID}"
-                    ]]
-                ])
+                git branch: "${env.BRANCH_NAME}",
+                    url: 'https://github.com/adityakardile6329/SauceDemo_CapstoneProject'
             }
         }
  
@@ -31,56 +24,69 @@ pipeline {
             steps {
                 bat """
                 echo Copying files from Eclipse workspace...
-                robocopy "${ECLIPSE_WORKSPACE}" "." /E /XD ".git"
+                xcopy /E /Y /I "${ECLIPSE_WORKSPACE}\\*" "."
                 """
             }
         }
  
-        stage('Configure Git') {
+        stage('Build & Test') {
             steps {
-                bat """
-                git config user.email "adityakardile31@gmail.com"
-                git config user.name "Aditya Kardile"
-                """
-            }
-        }
- 
-        stage('Check Git Status') {
-            steps {
-                bat 'git status'
+                bat 'mvn clean test -DsuiteXmlFile=src/test/resources/testng.xml'
             }
         }
  
         stage('Commit & Push Changes') {
             steps {
-                bat """
-                git add .
+                script {
+                    echo 'Checking for changes to push...'
+                    withCredentials([usernamePassword(
+                        credentialsId: '36821c07-230e-4b74-b3d2-a8907a056d23',
+                        usernameVariable: 'GIT_USER',
+                        passwordVariable: 'GIT_TOKEN')]) {
  
-                REM Check if there are changes to commit
-                git diff --cached --quiet
-                IF %ERRORLEVEL% NEQ 0 (
-                    echo Changes detected, committing...
-                    git commit -m "${COMMIT_MESSAGE}"
+                        bat """
+                            git config user.email "adityakardile31@gmail.com"
+                            git config user.name "Aditya"
  
-                    echo Pulling latest changes from remote...
-                    git pull origin ${BRANCH_NAME} --rebase
+                            git status
+                            git add .
  
-                    echo Pushing changes to remote...
-                    git push origin ${BRANCH_NAME}
-                ) ELSE (
-                    echo No changes to commit.
-                )
-                """
+                            REM Commit only if there are changes
+                            git diff --cached --quiet || git commit -m "${COMMIT_MESSAGE}"
+ 
+                            REM Push using token
+                            git push https://%GIT_USER%:%GIT_TOKEN%@github.com/adityakardile6329/SauceDemo_CapstoneProject.git ${BRANCH_NAME}
+                        """
+                    }
+                }
             }
         }
     }
  
     post {
-        success {
-            echo 'Push to Git completed (if there were changes).'
-        }
-        failure {
-            echo 'Build failed. Check console output.'
+        always {
+            // Archive screenshots
+            archiveArtifacts artifacts: 'reports/screenshots/*', fingerprint: true
+ 
+            // Publish Cucumber Report
+            publishHTML(target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'reports/cucumber-reports',
+                reportFiles: 'cucumber-report.html',
+                reportName: 'Cucumber Report'
+            ])
+ 
+            // Publish Extent Report
+            publishHTML(target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'reports/extent-reports',
+                reportFiles: 'index.html',
+                reportName: 'Extent Report'
+            ])
         }
     }
 }

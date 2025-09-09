@@ -7,11 +7,6 @@ pipeline {
       COMMIT_MESSAGE = 'Jenkins: Auto-commit after build'
    }
    
-   // Auto-trigger every 5 mins on Git changes
-   triggers {
-      pollSCM('H H * * *')
-   }
-   
    stages {
       stage('Checkout from Git') {
          steps {

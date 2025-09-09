@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-09T11:22:59 IST" name="Suite" finished-at="2025-09-09T11:23:24 IST" duration-ms="25376">
+  <suite started-at="2025-09-09T11:28:06 IST" name="Suite" finished-at="2025-09-09T11:28:32 IST" duration-ms="25926">
     <groups>
     </groups>
-    <test started-at="2025-09-09T11:22:59 IST" name="Test" finished-at="2025-09-09T11:23:24 IST" duration-ms="25376">
+    <test started-at="2025-09-09T11:28:06 IST" name="Test" finished-at="2025-09-09T11:28:32 IST" duration-ms="25926">
       <class name="tests.CartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:22:59 IST" name="setup" finished-at="2025-09-09T11:23:09 IST" duration-ms="9900" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:28:06 IST" name="setup" finished-at="2025-09-09T11:28:15 IST" duration-ms="9215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testContinueShopping()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:23:09 IST" name="testContinueShopping" finished-at="2025-09-09T11:23:12 IST" duration-ms="3270" status="PASS">
+        <test-method signature="testContinueShopping()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:28:15 IST" name="testContinueShopping" finished-at="2025-09-09T11:28:18 IST" duration-ms="3276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContinueShopping -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:23:12 IST" name="tearDown" finished-at="2025-09-09T11:23:13 IST" duration-ms="530" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:28:18 IST" name="tearDown" finished-at="2025-09-09T11:28:19 IST" duration-ms="452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:23:13 IST" name="setup" finished-at="2025-09-09T11:23:21 IST" duration-ms="8220" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:28:19 IST" name="setup" finished-at="2025-09-09T11:28:27 IST" duration-ms="8005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testRemoveProductFromCart()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:23:21 IST" name="testRemoveProductFromCart" finished-at="2025-09-09T11:23:24 IST" duration-ms="3210" status="PASS">
+        <test-method signature="testRemoveProductFromCart()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:28:27 IST" name="testRemoveProductFromCart" finished-at="2025-09-09T11:28:30 IST" duration-ms="3195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveProductFromCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:23:24 IST" name="tearDown" finished-at="2025-09-09T11:23:24 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@9d5509a]" started-at="2025-09-09T11:28:30 IST" name="tearDown" finished-at="2025-09-09T11:28:32 IST" duration-ms="1736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

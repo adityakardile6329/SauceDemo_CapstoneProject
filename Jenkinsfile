@@ -63,29 +63,29 @@ pipeline {
       }
    }
    
-   post {
-      always {
-         // Archive screenshots
-         archiveArtifacts artifacts: 'screenshots/*', fingerprint: true
+post {
+    always {
+        // Archive all screenshots from nested date folders
+        archiveArtifacts artifacts: 'screenshots/**/*.png', allowEmptyArchive: true
          
-         // Publish Cucumber Report
-         publishHTML(target: [
-         allowMissing: false,
-         alwaysLinkToLastBuild: true,
-         keepAll: true,
-         reportDir: 'reports/cucumber-reports',
-         reportFiles: 'cucumber-report.html',
-         reportName: 'Cucumber Report'
-         ])
+        // Publish Cucumber Report
+        publishHTML(target: [
+            allowMissing: false,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'reports/cucumber-reports',
+            reportFiles: 'cucumber-report.html',
+            reportName: 'Cucumber Report'
+        ])
          
-         // Publish Extent Report
-         publishHTML(target: [
-         allowMissing: false,
-         alwaysLinkToLastBuild: true,
-         keepAll: true,
-         reportDir: 'reports/extent-reports',
-         reportFiles: 'index.html',
-         reportName: 'Extent Report'
-         ])
-      }
-   }
+        // Publish Extent Report
+        publishHTML(target: [
+            allowMissing: false,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'reports/extent-reports',
+            reportFiles: 'index.html',
+            reportName: 'Extent Report'
+        ])
+    }
+}

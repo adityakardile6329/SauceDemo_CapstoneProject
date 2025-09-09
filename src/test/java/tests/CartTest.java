@@ -17,6 +17,7 @@ public class CartTest {
 
     WebDriver driver;
     LoginPage loginPage;
+    LoginPage loginPage1;
     ProductPage productPage;
     CartPage cartPage;
     ExtentReports extent;

@@ -11,7 +11,8 @@ import utils.ScreenShotUtils;
 import utils.ExtentManager;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-//cart testtt
+
+//cart testtt for saucedemo
 public class CartTest {
 
     WebDriver driver;

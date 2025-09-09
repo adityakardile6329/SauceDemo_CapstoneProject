@@ -1,0 +1,8 @@
+steps\LoginSteps.class
+tests\CartTest.class
+tests\CheckoutTest.class
+com\example\saucedemo\AppTest.class
+tests\ProductTest.class
+runner\TestRunner.class
+tests\NegativeTest.class
+tests\UITest.class

@@ -23,8 +23,6 @@ public class ProductTest {
     public void setup() {
         driver = DriverFactory.getDriver("chrome");
         extent = ExtentManager.getExtentReports();
-
-        driver.get("https://www.saucedemo.com/");
         loginPage = new LoginPage(driver);
         loginPage.enterUsername("standard_user");
         loginPage.enterPassword("secret_sauce");
@@ -34,9 +32,10 @@ public class ProductTest {
     }
 
     @Test(priority = 1)
-    public void testAddProductToCart() {
+    public void testAddProductToCart() throws InterruptedException {
         test = extent.createTest("Add Product to Cart");
         productPage.addProductToCart();
+        Thread.sleep(3000);
         int count = productPage.getCartCount();
         Assert.assertEquals(count, 1);
         ScreenShotUtils.takeScreenshot(driver, "AddProductToCart");
@@ -47,6 +46,7 @@ public class ProductTest {
     public void testClickProductDetails() throws InterruptedException {
         test = extent.createTest("Click Product for Details");
         productPage.clickProduct();
+        Thread.sleep(3000);
         String url = driver.getCurrentUrl();
         Assert.assertTrue(url.contains("inventory-item.html"));
         ScreenShotUtils.takeScreenshot(driver, "ProductDetailsPage");

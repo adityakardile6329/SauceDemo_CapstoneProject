@@ -28,7 +28,6 @@ public class NegativeTest {
         driver = DriverFactory.getDriver("chrome");
         extent = ExtentManager.getExtentReports();
 
-        driver.get("https://www.saucedemo.com/");
         loginPage = new LoginPage(driver);
         loginPage.enterUsername("standard_user");
         loginPage.enterPassword("secret_sauce");
@@ -40,13 +39,15 @@ public class NegativeTest {
     }
 
     @Test
-    public void testAddThenRemoveProduct() {
+    public void testAddThenRemoveProduct() throws InterruptedException {
         test = extent.createTest("Add Product, Remove It, Verify Cart Empty");
         productPage.addProductToCart();
+        Thread.sleep(2000);
         int count = productPage.getCartCount();
         Assert.assertEquals(count, 1);
         test.pass("Product added to cart successfully");
         cartPage.openCart();
+        Thread.sleep(2000);
         cartPage.removeProduct();
         test.pass("Product removed from cart");
         Assert.assertFalse(cartPage.isProductPresent());

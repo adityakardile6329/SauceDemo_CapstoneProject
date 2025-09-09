@@ -23,10 +23,11 @@ public class DriverFactory {
             WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver();
         } else {
-            System.out.println("Unknown browser! Starting Chrome by default.");
+            System.out.println(" Starting Chrome by default.");
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(options);
         }
+        driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
         return driver;
     }

@@ -20,7 +20,6 @@ public class LoginSteps {
     @Given("User is on login page using {string}")
     public void user_is_on_login_page_using(String browser) {
         driver = DriverFactory.getDriver(browser);
-        driver.get("https://www.saucedemo.com/");
         loginPage = new LoginPage(driver);
     }
 

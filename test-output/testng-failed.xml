@@ -3,13 +3,45 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="tests.ProductTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testAddProductToCart"/>
+          <include name="testClickProductDetails"/>
+        </methods>
+      </class> <!-- tests.ProductTest -->
+      <class name="tests.CheckoutTest">
+        <methods>
+          <include name="testCheckoutWithValidInformation"/>
+          <include name="tearDown"/>
+          <include name="testCompleteOrder"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CheckoutTest -->
       <class name="tests.UITest">
         <methods>
           <include name="testLogoutFromBurgerMenu"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="testVerifyBurgerMenuPresence"/>
         </methods>
       </class> <!-- tests.UITest -->
+      <class name="tests.CartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="testContinueShopping"/>
+          <include name="testRemoveProductFromCart"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.CartTest -->
+      <class name="tests.NegativeTest">
+        <methods>
+          <include name="setup"/>
+          <include name="testAddThenRemoveProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.NegativeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

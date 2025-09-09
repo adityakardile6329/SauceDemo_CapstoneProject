@@ -3,11 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="tests.ProductTest"/>
+      
       <class name="tests.CartTest"/>
-      <class name="tests.CheckoutTest"/>
-      <class name="tests.NegativeTest"/>
-      <class name="tests.UITest"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

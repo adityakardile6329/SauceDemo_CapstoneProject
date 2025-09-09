@@ -26,7 +26,6 @@ public class CheckoutTest {
         driver = DriverFactory.getDriver("chrome");
         extent = ExtentManager.getExtentReports();
 
-        driver.get("https://www.saucedemo.com/");
         loginPage = new LoginPage(driver);
         loginPage.enterUsername("standard_user");
         loginPage.enterPassword("secret_sauce");
@@ -37,19 +36,21 @@ public class CheckoutTest {
     }
     
     @Test(priority = 1)
-    public void testCheckoutWithValidInformation() {
+    public void testCheckoutWithValidInformation() throws InterruptedException {
         test = extent.createTest("Checkout with Valid Information");
         productPage.addProductToCart();
+        Thread.sleep(3000);
         int count = productPage.getCartCount();
         Assert.assertEquals(count, 1);
-        test.pass("Product added to cart successfully");
         checkoutPage.openCart();
+        Thread.sleep(2000);
         checkoutPage.clickCheckout();
-        test.pass("Navigated to checkout page");
+        Thread.sleep(2000);
         checkoutPage.enterCustomerInfo("Aditya", "Kardile", "411001");
+        Thread.sleep(2000);
         checkoutPage.clickContinue();
-        test.pass("Entered valid customer information");
         checkoutPage.clickFinish();
+        Thread.sleep(2000);
         String confirmation = checkoutPage.getConfirmationMessage();
         Assert.assertEquals(confirmation, "Thank you for your order!");
         ScreenShotUtils.takeScreenshot(driver, "CheckoutValidInfo");
@@ -58,19 +59,20 @@ public class CheckoutTest {
 
 
     @Test(priority = 2)
-    public void testCompleteOrder() {
+    public void testCompleteOrder() throws InterruptedException {
         test = extent.createTest("Complete Order and Verify Confirmation");
         productPage.addProductToCart();
+        Thread.sleep(2000);
         int count = productPage.getCartCount();
         Assert.assertEquals(count, 1);
-        test.pass("Product added to cart successfully");
         checkoutPage.openCart();
+        Thread.sleep(2000);
         checkoutPage.clickCheckout();
-        test.pass("Navigated to checkout page");
+        Thread.sleep(2000);
         checkoutPage.enterCustomerInfo("John", "Carry", "12345");
         checkoutPage.clickContinue();
-        test.pass("Entered customer info and continued");
         checkoutPage.clickFinish();
+        Thread.sleep(2000);
         String confirmation = checkoutPage.getConfirmationMessage();
         Assert.assertEquals(confirmation, "Thank you for your order!");
         ScreenShotUtils.takeScreenshot(driver, "OrderConfirmation");

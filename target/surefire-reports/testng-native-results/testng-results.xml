@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-09T10:36:08 IST" name="Surefire suite" finished-at="2025-09-09T10:37:33 IST" duration-ms="84081">
+    <groups>
+    </groups>
+    <test started-at="2025-09-09T10:36:08 IST" name="Surefire test" finished-at="2025-09-09T10:37:33 IST" duration-ms="84081">
+      <class name="tests.UITest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-09T10:37:27 IST" name="setup" finished-at="2025-09-09T10:37:29 IST" duration-ms="2743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testVerifyBurgerMenuPresence()[pri:1, instance:tests.UITest@5f058f00]" started-at="2025-09-09T10:37:29 IST" name="testVerifyBurgerMenuPresence" finished-at="2025-09-09T10:37:29 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyBurgerMenuPresence -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-09T10:37:29 IST" name="tearDown" finished-at="2025-09-09T10:37:29 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-09T10:37:29 IST" name="setup" finished-at="2025-09-09T10:37:32 IST" duration-ms="2208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogoutFromBurgerMenu()[pri:2, instance:tests.UITest@5f058f00]" started-at="2025-09-09T10:37:32 IST" name="testLogoutFromBurgerMenu" finished-at="2025-09-09T10:37:32 IST" duration-ms="727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutFromBurgerMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-09T10:37:32 IST" name="tearDown" finished-at="2025-09-09T10:37:33 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.UITest -->
+      <class name="tests.CartTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T10:36:08 IST" name="setup" finished-at="2025-09-09T10:36:20 IST" duration-ms="11731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testContinueShopping()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T10:36:20 IST" name="testContinueShopping" finished-at="2025-09-09T10:36:23 IST" duration-ms="3185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContinueShopping -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T10:36:23 IST" name="tearDown" finished-at="2025-09-09T10:36:24 IST" duration-ms="1054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T10:36:24 IST" name="setup" finished-at="2025-09-09T10:36:34 IST" duration-ms="9756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRemoveProductFromCart()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T10:36:34 IST" name="testRemoveProductFromCart" finished-at="2025-09-09T10:36:37 IST" duration-ms="3154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveProductFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T10:36:37 IST" name="tearDown" finished-at="2025-09-09T10:36:38 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CartTest -->
+      <class name="tests.ProductTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T10:37:12 IST" name="setup" finished-at="2025-09-09T10:37:15 IST" duration-ms="3077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddProductToCart()[pri:1, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T10:37:15 IST" name="testAddProductToCart" finished-at="2025-09-09T10:37:18 IST" duration-ms="3143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T10:37:18 IST" name="tearDown" finished-at="2025-09-09T10:37:18 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T10:37:18 IST" name="setup" finished-at="2025-09-09T10:37:21 IST" duration-ms="3095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testClickProductDetails()[pri:2, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T10:37:21 IST" name="testClickProductDetails" finished-at="2025-09-09T10:37:26 IST" duration-ms="5116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickProductDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T10:37:26 IST" name="tearDown" finished-at="2025-09-09T10:37:27 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ProductTest -->
+      <class name="tests.NegativeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NegativeTest@6eda5c9]" started-at="2025-09-09T10:37:05 IST" name="setup" finished-at="2025-09-09T10:37:07 IST" duration-ms="2629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddThenRemoveProduct()[pri:0, instance:tests.NegativeTest@6eda5c9]" started-at="2025-09-09T10:37:07 IST" name="testAddThenRemoveProduct" finished-at="2025-09-09T10:37:12 IST" duration-ms="4293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddThenRemoveProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NegativeTest@6eda5c9]" started-at="2025-09-09T10:37:12 IST" name="tearDown" finished-at="2025-09-09T10:37:12 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.NegativeTest -->
+      <class name="tests.CheckoutTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T10:36:38 IST" name="setup" finished-at="2025-09-09T10:36:41 IST" duration-ms="3014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCheckoutWithValidInformation()[pri:1, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T10:36:41 IST" name="testCheckoutWithValidInformation" finished-at="2025-09-09T10:36:52 IST" duration-ms="11701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutWithValidInformation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T10:36:52 IST" name="tearDown" finished-at="2025-09-09T10:36:53 IST" duration-ms="735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T10:36:53 IST" name="setup" finished-at="2025-09-09T10:36:56 IST" duration-ms="2940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCompleteOrder()[pri:2, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T10:36:56 IST" name="testCompleteOrder" finished-at="2025-09-09T10:37:05 IST" duration-ms="8662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T10:37:05 IST" name="tearDown" finished-at="2025-09-09T10:37:05 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CheckoutTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

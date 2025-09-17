@@ -2,124 +2,124 @@
 <testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-09T11:28:55 IST" name="Surefire suite" finished-at="2025-09-09T11:30:13 IST" duration-ms="77916">
+  <suite started-at="2025-09-17T19:17:52 IST" name="Surefire suite" finished-at="2025-09-17T19:19:30 IST" duration-ms="97335">
     <groups>
     </groups>
-    <test started-at="2025-09-09T11:28:55 IST" name="Surefire test" finished-at="2025-09-09T11:30:13 IST" duration-ms="77916">
+    <test started-at="2025-09-17T19:17:52 IST" name="Surefire test" finished-at="2025-09-17T19:19:30 IST" duration-ms="97335">
       <class name="tests.UITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-09T11:30:09 IST" name="setup" finished-at="2025-09-09T11:30:11 IST" duration-ms="1918" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-17T19:19:21 IST" name="setup" finished-at="2025-09-17T19:19:25 IST" duration-ms="3747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testVerifyBurgerMenuPresence()[pri:1, instance:tests.UITest@5f058f00]" started-at="2025-09-09T11:30:11 IST" name="testVerifyBurgerMenuPresence" finished-at="2025-09-09T11:30:11 IST" duration-ms="69" status="PASS">
+        <test-method signature="testVerifyBurgerMenuPresence()[pri:1, instance:tests.UITest@5f058f00]" started-at="2025-09-17T19:19:25 IST" name="testVerifyBurgerMenuPresence" finished-at="2025-09-17T19:19:25 IST" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyBurgerMenuPresence -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-09T11:30:11 IST" name="tearDown" finished-at="2025-09-09T11:30:11 IST" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-17T19:19:25 IST" name="tearDown" finished-at="2025-09-17T19:19:25 IST" duration-ms="141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-09T11:30:11 IST" name="setup" finished-at="2025-09-09T11:30:13 IST" duration-ms="1832" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-17T19:19:25 IST" name="setup" finished-at="2025-09-17T19:19:29 IST" duration-ms="3420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogoutFromBurgerMenu()[pri:2, instance:tests.UITest@5f058f00]" started-at="2025-09-09T11:30:13 IST" name="testLogoutFromBurgerMenu" finished-at="2025-09-09T11:30:13 IST" duration-ms="764" status="PASS">
+        <test-method signature="testLogoutFromBurgerMenu()[pri:2, instance:tests.UITest@5f058f00]" started-at="2025-09-17T19:19:29 IST" name="testLogoutFromBurgerMenu" finished-at="2025-09-17T19:19:30 IST" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogoutFromBurgerMenu -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-09T11:30:13 IST" name="tearDown" finished-at="2025-09-09T11:30:13 IST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UITest@5f058f00]" started-at="2025-09-17T19:19:30 IST" name="tearDown" finished-at="2025-09-17T19:19:30 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.UITest -->
       <class name="tests.CartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T11:28:56 IST" name="setup" finished-at="2025-09-09T11:29:07 IST" duration-ms="11114" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-17T19:17:52 IST" name="setup" finished-at="2025-09-17T19:18:10 IST" duration-ms="17213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testContinueShopping()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T11:29:07 IST" name="testContinueShopping" finished-at="2025-09-09T11:29:10 IST" duration-ms="3182" status="PASS">
+        <test-method signature="testContinueShopping()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-17T19:18:10 IST" name="testContinueShopping" finished-at="2025-09-17T19:18:13 IST" duration-ms="3255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContinueShopping -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T11:29:10 IST" name="tearDown" finished-at="2025-09-09T11:29:10 IST" duration-ms="436" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-17T19:18:13 IST" name="tearDown" finished-at="2025-09-17T19:18:14 IST" duration-ms="700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T11:29:10 IST" name="setup" finished-at="2025-09-09T11:29:19 IST" duration-ms="8762" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-17T19:18:14 IST" name="setup" finished-at="2025-09-17T19:18:24 IST" duration-ms="9980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testRemoveProductFromCart()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T11:29:19 IST" name="testRemoveProductFromCart" finished-at="2025-09-09T11:29:22 IST" duration-ms="3155" status="PASS">
+        <test-method signature="testRemoveProductFromCart()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-17T19:18:24 IST" name="testRemoveProductFromCart" finished-at="2025-09-17T19:18:27 IST" duration-ms="3229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveProductFromCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-09T11:29:22 IST" name="tearDown" finished-at="2025-09-09T11:29:22 IST" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@6580cfdd]" started-at="2025-09-17T19:18:27 IST" name="tearDown" finished-at="2025-09-17T19:18:27 IST" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CartTest -->
       <class name="tests.ProductTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T11:29:56 IST" name="setup" finished-at="2025-09-09T11:29:57 IST" duration-ms="1808" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-17T19:19:04 IST" name="setup" finished-at="2025-09-17T19:19:09 IST" duration-ms="4242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testAddProductToCart()[pri:1, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T11:29:57 IST" name="testAddProductToCart" finished-at="2025-09-09T11:30:01 IST" duration-ms="3113" status="PASS">
+        <test-method signature="testAddProductToCart()[pri:1, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-17T19:19:09 IST" name="testAddProductToCart" finished-at="2025-09-17T19:19:12 IST" duration-ms="3183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T11:30:01 IST" name="tearDown" finished-at="2025-09-09T11:30:01 IST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-17T19:19:12 IST" name="tearDown" finished-at="2025-09-17T19:19:12 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T11:30:01 IST" name="setup" finished-at="2025-09-09T11:30:03 IST" duration-ms="2720" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-17T19:19:12 IST" name="setup" finished-at="2025-09-17T19:19:16 IST" duration-ms="3902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testClickProductDetails()[pri:2, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T11:30:03 IST" name="testClickProductDetails" finished-at="2025-09-09T11:30:08 IST" duration-ms="5132" status="PASS">
+        <test-method signature="testClickProductDetails()[pri:2, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-17T19:19:16 IST" name="testClickProductDetails" finished-at="2025-09-17T19:19:21 IST" duration-ms="5182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClickProductDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-09T11:30:08 IST" name="tearDown" finished-at="2025-09-09T11:30:09 IST" duration-ms="128" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@55b7a4e0]" started-at="2025-09-17T19:19:21 IST" name="tearDown" finished-at="2025-09-17T19:19:21 IST" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ProductTest -->
       <class name="tests.NegativeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NegativeTest@6eda5c9]" started-at="2025-09-09T11:29:48 IST" name="setup" finished-at="2025-09-09T11:29:51 IST" duration-ms="2858" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NegativeTest@6eda5c9]" started-at="2025-09-17T19:18:56 IST" name="setup" finished-at="2025-09-17T19:19:00 IST" duration-ms="3759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testAddThenRemoveProduct()[pri:0, instance:tests.NegativeTest@6eda5c9]" started-at="2025-09-09T11:29:51 IST" name="testAddThenRemoveProduct" finished-at="2025-09-09T11:29:55 IST" duration-ms="4296" status="PASS">
+        <test-method signature="testAddThenRemoveProduct()[pri:0, instance:tests.NegativeTest@6eda5c9]" started-at="2025-09-17T19:19:00 IST" name="testAddThenRemoveProduct" finished-at="2025-09-17T19:19:04 IST" duration-ms="4479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddThenRemoveProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NegativeTest@6eda5c9]" started-at="2025-09-09T11:29:55 IST" name="tearDown" finished-at="2025-09-09T11:29:56 IST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NegativeTest@6eda5c9]" started-at="2025-09-17T19:19:04 IST" name="tearDown" finished-at="2025-09-17T19:19:04 IST" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.NegativeTest -->
       <class name="tests.CheckoutTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T11:29:22 IST" name="setup" finished-at="2025-09-09T11:29:25 IST" duration-ms="2935" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-17T19:18:27 IST" name="setup" finished-at="2025-09-17T19:18:31 IST" duration-ms="3600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCheckoutWithValidInformation()[pri:1, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T11:29:25 IST" name="testCheckoutWithValidInformation" finished-at="2025-09-09T11:29:37 IST" duration-ms="11692" status="PASS">
+        <test-method signature="testCheckoutWithValidInformation()[pri:1, instance:tests.CheckoutTest@56620197]" started-at="2025-09-17T19:18:31 IST" name="testCheckoutWithValidInformation" finished-at="2025-09-17T19:18:43 IST" duration-ms="12070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutWithValidInformation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T11:29:37 IST" name="tearDown" finished-at="2025-09-09T11:29:37 IST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-17T19:18:43 IST" name="tearDown" finished-at="2025-09-17T19:18:43 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T11:29:37 IST" name="setup" finished-at="2025-09-09T11:29:40 IST" duration-ms="2541" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-17T19:18:43 IST" name="setup" finished-at="2025-09-17T19:18:47 IST" duration-ms="3794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCompleteOrder()[pri:2, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T11:29:40 IST" name="testCompleteOrder" finished-at="2025-09-09T11:29:48 IST" duration-ms="8594" status="PASS">
+        <test-method signature="testCompleteOrder()[pri:2, instance:tests.CheckoutTest@56620197]" started-at="2025-09-17T19:18:47 IST" name="testCompleteOrder" finished-at="2025-09-17T19:18:56 IST" duration-ms="9009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompleteOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-09T11:29:48 IST" name="tearDown" finished-at="2025-09-09T11:29:48 IST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@56620197]" started-at="2025-09-17T19:18:56 IST" name="tearDown" finished-at="2025-09-17T19:18:56 IST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
